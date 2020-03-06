@@ -47,15 +47,15 @@ export default function Components(props) {
           color: "white"
         }}
         {...rest}
-      />
+      /> 
       <Parallax image={require("assets/img/banner.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
+                <h1 className={classes.title}>Prueba!!!!!!.</h1>
                 <h3 className={classes.subtitle}>
-                  A Badass Material-UI Kit based on Material Design.
+                  Prueba 222222222222222
                 </h3>
               </div>
             </GridItem>
