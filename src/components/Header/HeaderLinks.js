@@ -12,7 +12,7 @@ import ListItem from "@material-ui/core/ListItem";
 
 
 // @material-ui/icons
-import { ContactsRounded, AddOutlined, PhotoLibraryOutlined } from "@material-ui/icons";
+import { ContactsRounded, AddOutlined, PhotoLibraryOutlined, SearchOutlined } from "@material-ui/icons";
 
 // core components
 import Button from "components/CustomButtons/Button.js";
@@ -27,37 +27,25 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
 
           <ListItem className={classes.listItem}>
-        <Button
-          href="#"
-          color="transparent"
-          className={classes.navLink}
-        >
-          <PhotoLibraryOutlined className={classes.icons} />Galeria
-        </Button>
-      </ListItem>
-
+            <Button
+            href="#"
+            color="transparent"
+            className={classes.navLink}
+            >
+              <SearchOutlined className={classes.icons} /> Buscar
+            </Button>
+          </ListItem>
 
           <ListItem className={classes.listItem}>
-        <Button 
-          href="#"
-          color="transparent"
-          className={classes.navLink}
-        >
-        <AddOutlined className={classes.icons} /> Lo mas nuevo
-        </Button>
-      </ListItem>
-
-
-      <ListItem className={classes.listItem}>
         <Button
           href="#"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
-          <ContactsRounded className={classes.icons} /> Contacto
+          <PhotoLibraryOutlined className={classes.icons} />Ver Todo
         </Button>
       </ListItem>
+
     </List>
   );
 }
