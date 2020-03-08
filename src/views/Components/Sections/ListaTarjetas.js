@@ -4,11 +4,11 @@ import Tarjeta from './Tarjeta';
 const ListaTarjetas = ({ equipos }) => {
 
     return(
-        <div>
+        <div className="tc">
          {
         equipos.map((user, i) => {
         return  (
-        <Tarjeta 
+        <Tarjeta style={{marginLeft: '5px'}}
         key={i} 
         id={equipos[i].id} 
         nombre={equipos[i].nombre} 
