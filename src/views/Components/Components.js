@@ -28,7 +28,6 @@ import SearchBox from './Sections/SearchBox';
 //import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 //import SectionLogin from "./Sections/SectionLogin.js";
 //import SectionExamples from "./Sections/SectionExamples.js";
-//import SectionDownload from "./Sections/SectionDownload.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -89,7 +88,6 @@ export default function Components(props) {
           </Link>
         </GridItem>
         {/* <SectionExamples /> */}
-        {/*<SectionDownload />*/}
       </div>
       <Footer />
     </div>
