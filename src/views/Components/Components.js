@@ -17,6 +17,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import ListaTarjetas from './Sections/ListaTarjetas';
 import { equipos } from './Sections/equipos';
+import SearchBox from './Sections/SearchBox';
 //import SectionBasics from "./Sections/SectionBasics.js";
 //import SectionNavbars from "./Sections/SectionNavbars.js";
 //import SectionTabs from "./Sections/SectionTabs.js";
@@ -66,7 +67,7 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-
+        <SearchBox />
         <ListaTarjetas equipos={equipos} />
         {/*<SectionBasics />*/}
         {/*<SectionNavbars />*/}
