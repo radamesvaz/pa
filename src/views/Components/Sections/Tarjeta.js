@@ -7,7 +7,7 @@ const Tarjeta = ({ nombre, precio, disponibilidad, id }) => {
             <div>
                 <h2>{nombre}</h2>
                 <h3>{precio}</h3>
-                <p>{disponibilidad}</p>
+                <p>Disponibilidad: {disponibilidad}</p>
             </div>
         </div>
     );
