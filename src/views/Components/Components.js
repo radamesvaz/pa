@@ -33,10 +33,13 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
 
-export default function Components(props) {
-  const classes = useStyles();
-  const { ...rest } = props;
+class Components extends Component {
 
+
+  render(){
+
+  const classes = useStyles();
+  const { ...rest } = this.props;
 
 
   return (
@@ -93,3 +96,6 @@ export default function Components(props) {
     </div>
   );
 }
+}
+
+export default Components;

@@ -101,7 +101,7 @@ export default function SectionBasics() {
           </GridContainer>
           <div className={classes.title}>
             <h3>
-              <small>Pick your size</small>
+              <small>Pick your size!</small>
             </h3>
           </div>
           <GridContainer justify="center">
