@@ -46,11 +46,7 @@ function Components(props) {
   ]);
 
   const onSearchChange = (event) => {
-   //setState({accesorios: [], searchField: event.target.value });
-   //console.log(equipo.searchField);
-   const search = event.target.value;
-   setState({accesorios: [], searchField: search});
-   console.log(search);
+   setState({ ...equipo, searchField: event.target.value });
    console.log(equipo);
   };
 
