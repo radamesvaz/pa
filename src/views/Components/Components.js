@@ -38,13 +38,17 @@ function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
 
-  const [equipo, setEquipos] = useState([
+  const [equipo, setState] = useState([
     {
       accesorios: [],
       searchField: ''
     }
-  ])
+  ]);
 
+  const onSearchChange = (event) => {
+   setState({accesorios: [], searchField: event.target.value });
+   console.log(equipo.searchField);
+  };
 
   return (
     <div>
@@ -76,7 +80,7 @@ function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SearchBox />
+        <SearchBox searchChange={onSearchChange}/>
         <ListaTarjetas equipos={equipos} />
         {/*<SectionBasics />*/}
         {/*<SectionNavbars />*/}
@@ -96,7 +100,7 @@ function Components(props) {
         </GridItem>
         {/* <SectionExamples /> */}
       </div>
-      <Footer />
+      {/*<Footer />*/}
     </div>
   );
 }
