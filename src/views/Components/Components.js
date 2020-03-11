@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
@@ -33,13 +33,17 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
 
-class Components extends Component {
-
-
-  render(){
+function Components(props) {
 
   const classes = useStyles();
-  const { ...rest } = this.props;
+  const { ...rest } = props;
+
+  const [equipo, setEquipos] = useState([
+    {
+      accesorios: [],
+      searchField: ''
+    }
+  ])
 
 
   return (
@@ -96,6 +100,6 @@ class Components extends Component {
     </div>
   );
 }
-}
+
 
 export default Components;
