@@ -58,6 +58,11 @@ function Components(props) {
    console.log(equipo);
   };
 
+  const filteredRobots = equipo.accesorios.filter(cosa =>{
+    return cosa.name.toLowerCase().includes(equipo.searchField);
+  });
+
+
   return (
     <div>
       <Header
@@ -89,7 +94,7 @@ function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SearchBox searchChange={onSearchChange}/>
-        <ListaTarjetas accesorios={equipo.accesorios} />
+        <ListaTarjetas accesorios={filteredRobots} />
         {/*<SectionBasics />*/}
         {/*<SectionNavbars />*/}
         {/*<SectionTabs />*/}
