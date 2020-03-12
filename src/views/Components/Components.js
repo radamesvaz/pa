@@ -47,6 +47,7 @@ function Components(props) {
 
   const onSearchChange = (event) => {
    setState({...equipo, searchField: event.target.value });
+   console.log(event.target.value);
    console.log(equipo);
   };
  
