@@ -1,19 +1,19 @@
 import React from 'react';
 import Tarjeta from './Tarjeta';
 
-const ListaTarjetas = ({ equipos }) => {
+const ListaTarjetas = ({ accesorios }) => {
 
     return(
         <div className="tc">
          {
-        equipos.map((user, i) => {
+        accesorios.map((user, i) => {
         return  (
         <Tarjeta style={{marginLeft: '5px'}}
         key={i} 
-        id={equipos[i].id} 
-        nombre={equipos[i].nombre} 
-        precio={equipos[i].precio}
-        disponibilidad={equipos[i].disponibilidad}
+        id={accesorios[i].id} 
+        nombre={accesorios[i].name} 
+        /*precio={equipos[i].precio}
+        disponibilidad={equipos[i].disponibilidad}*/
         /> 
         );
     })

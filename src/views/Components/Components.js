@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
@@ -16,7 +16,7 @@ import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import ListaTarjetas from './Sections/ListaTarjetas';
-import { equipos } from './Sections/equipos';
+
 import SearchBox from './Sections/SearchBox';
 //import SectionBasics from "./Sections/SectionBasics.js";
 //import SectionNavbars from "./Sections/SectionNavbars.js";
@@ -45,12 +45,19 @@ function Components(props) {
     }
   );
 
+    useEffect(() => {
+      // code to run on component mount
+      fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response=> response.json())
+      .then(users => {setState({ accesorios: users })});
+    }, [])
+
   const onSearchChange = (event) => {
    setState({...equipo, searchField: event.target.value });
    console.log(event.target.value);
    console.log(equipo);
   };
- 
+
   return (
     <div>
       <Header
@@ -82,7 +89,7 @@ function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SearchBox searchChange={onSearchChange}/>
-        <ListaTarjetas equipos={equipos} />
+        <ListaTarjetas accesorios={equipo.accesorios} />
         {/*<SectionBasics />*/}
         {/*<SectionNavbars />*/}
         {/*<SectionTabs />*/}
