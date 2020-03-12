@@ -38,18 +38,18 @@ function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
 
-  const [equipo, setState] = useState([
+  const [equipo, setState] = useState(
     {
       accesorios: [],
       searchField: ''
     }
-  ]);
+  );
 
   const onSearchChange = (event) => {
-   setState({ ...equipo, searchField: event.target.value });
+   setState({...equipo, searchField: event.target.value });
    console.log(equipo);
   };
-
+ 
   return (
     <div>
       <Header
