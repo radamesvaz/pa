@@ -50,7 +50,7 @@ function Components(props) {
       fetch('https://jsonplaceholder.typicode.com/users')
       .then(response=> response.json())
       .then(users => {setState({ accesorios: users })});
-    }, [])
+    }, []);
 
   const onSearchChange = (event) => {
    setState({...equipo, searchField: event.target.value });
