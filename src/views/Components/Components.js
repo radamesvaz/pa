@@ -40,8 +40,10 @@ function Components(props) {
 
   const [equipo, setState] = useState(
     {
+      
       accesorios: [],
-      searchField: " "
+      searchField: " ",
+      
     }
   );
 
@@ -53,9 +55,8 @@ function Components(props) {
     }, []);
 
   const onSearchChange = (event) => {
-   setState({...equipo, searchField: event.target.value });
-   
-   console.log(equipo);
+    setState({...equipo, searchField: event.target.value });
+   console.log(equipo.searchField);
   };
 
   const filteredRobots = equipo.accesorios.filter(cosa =>{
