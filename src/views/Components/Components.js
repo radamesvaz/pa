@@ -16,7 +16,7 @@ import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import ListaTarjetas from './Sections/ListaTarjetas';
-
+import Scroll from './Sections/Scroll';
 import SearchBox from './Sections/SearchBox';
 //import SectionBasics from "./Sections/SectionBasics.js";
 //import SectionNavbars from "./Sections/SectionNavbars.js";
