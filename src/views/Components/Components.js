@@ -94,7 +94,9 @@ function Components(props) {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SearchBox searchChange={onSearchChange}/>
+          <Scroll >
         <ListaTarjetas accesorios={filteredRobots} />
+          </Scroll>
         {/*<SectionBasics />*/}
         {/*<SectionNavbars />*/}
         {/*<SectionTabs />*/}
