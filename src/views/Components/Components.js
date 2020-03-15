@@ -94,12 +94,14 @@ function Components(props) {
           </GridContainer>
         </div>
       </Parallax>
-
+      
       <div className={classNames(classes.main, classes.mainRaised)}>
+      <section id="buscar">
         <SearchBox searchChange={onSearchChange}/>
           <Scroll >
-          <ListaTarjetas accesorios={filteredRobots} />
+            <ListaTarjetas accesorios={filteredRobots} />
           </Scroll>
+          </section>
         {/*<SectionBasics />*/}
         {/*<SectionNavbars />*/}
         {/*<SectionTabs />*/}
