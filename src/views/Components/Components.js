@@ -42,8 +42,7 @@ function Components(props) {
     {
       
       accesorios: [],
-      searchField: " ",
-      
+      searchField: ""
     }
   );
 
@@ -51,12 +50,15 @@ function Components(props) {
       // code to run on component mount
       fetch('https://jsonplaceholder.typicode.com/users')
       .then(response=> response.json())
-      .then(users => {setState({ accesorios: users })});
+      .then(users => {setState({...equipo, accesorios: users })})
+    }, []);
+
+    useEffect(() => {
+      setState({ ...equipo, searchField: '' });
     }, []);
 
   const onSearchChange = (event) => {
     setState({...equipo, searchField: event.target.value });
-   console.log(equipo.searchField);
   };
 
   const filteredRobots = equipo.accesorios.filter(cosa =>{
@@ -96,7 +98,7 @@ function Components(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <SearchBox searchChange={onSearchChange}/>
           <Scroll >
-        <ListaTarjetas accesorios={filteredRobots} />
+          <ListaTarjetas accesorios={filteredRobots} />
           </Scroll>
         {/*<SectionBasics />*/}
         {/*<SectionNavbars />*/}
