@@ -13,4 +13,5 @@ const Tarjeta = ({ nombre, precio, disponibilidad, id }) => {
     );
 }
 
+
 export default Tarjeta;
