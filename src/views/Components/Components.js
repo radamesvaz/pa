@@ -61,8 +61,8 @@ function Components(props) {
     setState({...equipo, searchField: event.target.value });
   };
 
-  const filteredRobots = equipo.accesorios.filter(cosa =>{
-    return cosa.name.toLowerCase().includes(equipo.searchField);
+  const filteredRobots = equipo.accesorios.filter(i =>{
+    return i.name.toLowerCase().includes(equipo.searchField);
   });
 
 
