@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Tarjeta = ({ name, modelo, precio, link, id }) => {
+const Tarjeta = ({ nombre, modelo, precio, url, id }) => {
     return (
         <div className = 'tc bg-light-purple white dib br3 pa3 ma2 grow bw2 shadow-5 relative'>
-            <img alt='equipos!' src={link}/>
+            <img alt='equipos' style={{height: '200px'}} src={url}/>
             <div>
-                <h2>{name}</h2>
-                <h3>{modelo}</h3>
-                <h3>{precio}</h3>
+                <h2>{nombre}</h2>
+                <h3>Modelo: {modelo}</h3>
+                <p>Precio: {precio}</p>
 
             </div>
         </div>

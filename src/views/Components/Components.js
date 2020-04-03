@@ -51,7 +51,7 @@ function Components(props) {
       fetch('http://localhost:3000/home')
       .then(response=> response.json())
       .then(users => {setState({...equipo, accesorios: users })})
-    }, );
+    }, []);
 
     useEffect(() => {
       setState({ ...equipo, searchField: '' });

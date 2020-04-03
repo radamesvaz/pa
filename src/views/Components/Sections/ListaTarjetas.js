@@ -12,11 +12,11 @@ const ListaTarjetas = ({ accesorios }) => {
         key={i} 
         id={accesorios[i].id} 
         nombre={accesorios[i].name} 
-        link={accesorios[i].link}
+        modelo={accesorios[i].modelo}
+        precio={accesorios[i].precio}
+        url={accesorios[i].url}
 
-        
-        /*precio={equipos[i].precio}
-        disponibilidad={equipos[i].disponibilidad}*/
+    
         /> 
         );
     })
