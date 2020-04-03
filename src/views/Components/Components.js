@@ -48,10 +48,10 @@ function Components(props) {
 
     useEffect(() => {
       // code to run on component mount
-      fetch('https://jsonplaceholder.typicode.com/users')
+      fetch('http://localhost:3000/home')
       .then(response=> response.json())
       .then(users => {setState({...equipo, accesorios: users })})
-    }, []);
+    }, );
 
     useEffect(() => {
       setState({ ...equipo, searchField: '' });

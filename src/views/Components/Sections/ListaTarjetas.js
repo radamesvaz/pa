@@ -12,6 +12,9 @@ const ListaTarjetas = ({ accesorios }) => {
         key={i} 
         id={accesorios[i].id} 
         nombre={accesorios[i].name} 
+        link={accesorios[i].link}
+
+        
         /*precio={equipos[i].precio}
         disponibilidad={equipos[i].disponibilidad}*/
         /> 
