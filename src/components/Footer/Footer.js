@@ -39,7 +39,7 @@ export default function Footer(props) {
                 className={classes.block}
                 target="_blank"
               > 
-              <InstagramOutlined style={{fontSize: '18px'}} /> 
+              <InstagramOutlined style={{fontSize: '18px', marginRight:'2px'}} /> 
               
                 ¡Siguenos en Instagram!
               </a>

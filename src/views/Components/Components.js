@@ -18,16 +18,9 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import ListaTarjetas from './Sections/ListaTarjetas';
 import Scroll from './Sections/Scroll';
 import SearchBox from './Sections/SearchBox';
-//import SectionBasics from "./Sections/SectionBasics.js";
-//import SectionNavbars from "./Sections/SectionNavbars.js";
 //import SectionTabs from "./Sections/SectionTabs.js";
-//import SectionPills from "./Sections/SectionPills.js";
 //import SectionTypography from "./Sections/SectionTypography.js";
-//import SectionJavascript from "./Sections/SectionJavascript.js";
 //import SectionCarousel from "./Sections/SectionCarousel.js";
-//import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
-//import SectionLogin from "./Sections/SectionLogin.js";
-//import SectionExamples from "./Sections/SectionExamples.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -102,23 +95,10 @@ function Components(props) {
             <ListaTarjetas accesorios={filteredRobots} />
           </Scroll>
           </section>
-        {/*<SectionBasics />*/}
-        {/*<SectionNavbars />*/}
-        {/*<SectionTabs />*/}
-        {/*<SectionPills />*/}
+ 
         {/*<SectionTypography />*/}
-        {/*<SectionJavascript />*/}
         {/*<SectionCarousel />*/}
-       {/* <SectionCompletedExamples /> */}
-        {/*<SectionLogin />*/}
-        <GridItem md={12} className={classes.textCenter}>
-          <Link to={"/login-page"} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              ;)
-            </Button>
-          </Link>
-        </GridItem>
-        {/* <SectionExamples /> */}
+       
       </div>
       <Footer />
     </div>
