@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
@@ -11,7 +10,6 @@ import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -41,7 +39,7 @@ function Components(props) {
 
     useEffect(() => {
       // code to run on component mount
-      fetch('http://localhost:3000/home')
+      fetch('https://obscure-depths-14752.herokuapp.com/home')
       .then(response=> response.json())
       .then(users => {setState({...equipo, accesorios: users })})
     }, []);
