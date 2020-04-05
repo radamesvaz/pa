@@ -10,6 +10,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
+import {InstagramOutlined} from '@ant-design/icons';
+
 
 import styles from "assets/jss/material-kit-react/components/footerStyle.js";
 
@@ -33,53 +35,29 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.creative-tim.com/?ref=mkr-footer"
+                href="https://www.instagram.com/planetaaccesorios_/"
                 className={classes.block}
                 target="_blank"
-              >
-                Creative Tim
+              > 
+              <InstagramOutlined style={{fontSize: '18px'}} /> 
+              
+                ¡Siguenos en Instagram!
               </a>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
-            </ListItem>
+            
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          &copy; {1900 + new Date().getYear()} , desarrollado con{" "}
+          <Favorite className={classes.icon} /> por{" "}
           <a
-            href="https://www.creative-tim.com?ref=mkr-footer"
+            href="https://jolly-engelbart-d9f1d0.netlify.com/"
             className={aClasses}
             target="_blank"
           >
-            Creative Tim
+            Radames Vaz
           </a>{" "}
-          for a better web.
+          
         </div>
       </div>
     </footer>
