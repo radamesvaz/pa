@@ -7,8 +7,8 @@ const Tarjeta = ({ nombre, modelo, precio, link, url, id }) => {
             <img alt='equipos' style={{height: '200px'}} src={url}/>
         </a>
             <div>
+                <h3>{modelo}</h3>
                 <h2>{nombre}</h2>
-                <h3>Modelo: {modelo}</h3>
                 <p>Precio: {precio}</p>
 
             </div>
