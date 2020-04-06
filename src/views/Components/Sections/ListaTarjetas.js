@@ -14,6 +14,7 @@ const ListaTarjetas = ({ accesorios }) => {
         nombre={accesorios[i].name} 
         modelo={accesorios[i].modelo}
         precio={accesorios[i].precio}
+        link={accesorios[i].link}
         url={accesorios[i].url}
 
     
