@@ -8,7 +8,7 @@ const Tarjeta = ({ nombre, modelo, precio, link, url, id }) => {
         </a>
             <div>
                 <h3>{modelo}</h3>
-                <h2>{nombre}</h2>
+                <h3>{nombre}</h3>
                 <p>Precio: {precio}</p>
 
             </div>
