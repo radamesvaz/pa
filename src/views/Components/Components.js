@@ -53,7 +53,7 @@ function Components(props) {
   };
 
   const filteredRobots = equipo.accesorios.filter(i =>{
-    return i.name.toLowerCase().includes(equipo.searchField);
+    return i.modelo.toLowerCase().includes(equipo.searchField);
   });
 
 
